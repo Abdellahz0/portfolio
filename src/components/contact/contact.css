@@ -1,0 +1,99 @@
+.contactPage{
+    min-height: calc(100vh - 4rem);
+    width: 100vw; 
+    max-width: 100rem;
+    margin: 0 auto; 
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+/* When Not to Use It:
+When You Have Fixed Headers or Footers: In cases where other elements need to be factored into
+the layout, calc(100vh - [height])
+would be more appropriate to ensure that the content is visible and doesn’t 
+overflow or create unnecessary scrollbars. */
+
+
+.contactPageTitle{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.clientDesc{
+    font-size:  1rem;
+    font-weight: 300;
+}
+
+.clientImgs{
+    display: flex;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.clientImg{
+    object-fit: cover;
+    width: 23%;
+    min-width: 9rem;
+    margin: auto;
+    padding: 0.25rem;
+}
+
+#clients{
+    padding: 2rem;
+}
+
+.contactDesc{
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.contactForm{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+
+.name, .email, .msg{
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(40, 40, 40);
+}
+
+.submitBtn{
+    background-color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 3.5rem;
+    cursor: pointer;
+    margin: 2rem;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.link{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
+    cursor: pointer;
+}
+

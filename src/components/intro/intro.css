@@ -1,0 +1,80 @@
+#intro{
+    height: calc(100vh-4rem); /* to avoid the navbar*/
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg{
+    position: absolute;
+    top: -4rem;
+    z-index: -1;  /*Elements with a higher z-index value will appear in front of elements with a lower z-index value.*/
+    right: 0;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName{
+    color: yellow;
+}
+
+.introPara{
+    font-size: medium;
+    font-weight: 100;
+}
+
+.Btn{
+    background-color: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+}
+
+.hireimg{
+    width: 1.75rem;
+    object-fit: cover;
+    margin: 0 0.25rem;
+}
+
+@media screen and (max-width:840px) {
+    .bg{
+        right: -10vw;     /* if it reaches a certain px  the img will shift to right.*/
+    }   
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font: 4.5vw;
+    }
+}
+
+
+
+@media screen and (max-width:840px) {
+    .bg{
+        right: -20vw;     /* if it reaches a certain px  the img will shift to right.*/
+    }
+}
